@@ -28,7 +28,7 @@ void liberamapa(MAPA*m);
 void lemapa(MAPA*m);
 void alocamapa(MAPA*m);
 void imprimemapa(MAPA*m);
-void encontramapa(MAPA* a,POSICAO* p, char c);
+int encontramapa(MAPA* a,POSICAO* p, char c);
 int ehvalida(MAPA*a, int x, int y);
 int ehvazia (MAPA*a, int x, int y);
 void andanomapa(MAPA*a, int xorigem, int yorigem, int xdestino, int ydestino);

@@ -41,8 +41,8 @@ int ehvazia (MAPA*a, int x, int y){
      return	a->matriz[x] [y] == VAZIO;
 }
 
-void encontramapa(MAPA* a,POSICAO* p, char c){
-     int i;
+int encontramapa(MAPA* a,POSICAO* p, char c){
+     int i; 
 	 int j;
 	 int x;
 	 int y;
@@ -52,11 +52,11 @@ void encontramapa(MAPA* a,POSICAO* p, char c){
 		   if(a->matriz[i] [j] == c){
 		 	p->x = i;
 		 	p->y = j;
-		 	break;
+		 	return 1;
 		   }
 		}	
  	}
-	
+	return 0;
 }
 
 void liberamapa(MAPA*a){
